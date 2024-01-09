@@ -9,7 +9,7 @@ public class MurMurHashUtilsTest {
     @Test
     public void inverse() {
         for (int i = 0; i < Integer.MAX_VALUE; i++) {
-            assertTrue(i == MurMurHashUtils.murmurHash(MurMurHashUtils.inverse(i)));
+            assertEquals(i, MurMurHashUtils.murmurHash(MurMurHashUtils.inverse(i)));
         }
     }
 }
